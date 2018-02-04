@@ -15,3 +15,13 @@ function distanceTravelledInFeet(beginning, destination) {
     return (destination - beginning) * 264;
   }
 }
+function calculatesFarePrice(start, destination) {
+  if (distanceTravelledInFeet < 400) {
+    return 0;
+  } else if (distanceTravelledInFeet > 400 && distanceTravelledInFeet < 2000) {
+    return distanceTravelledInFeet * .02;    
+  } else {
+    return "cannot travel that far";
+  }
+  }
+}
