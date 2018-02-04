@@ -1,6 +1,7 @@
-function distanceFromHqInBlocks(blocks, 42) {
+function distanceFromHqInBlocks(blocks) {
   if (blocks > 42) {
-    const distance = 42 - blocks;
-    return distance;
+    return blocks - 42;
+  } else {
+    return 42 - blocks;
   }
 }
