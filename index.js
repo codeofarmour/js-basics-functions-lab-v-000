@@ -1,8 +1,6 @@
-const hQ = 42;
-const pickup = "";
-
-function distanceFromHqInBlocks(blocks) {
+function distanceFromHqInBlocks(blocks, hQ=42) {
   if (blocks > hQ) {
-    return blocks;
+    const distance = hQ - blocks;
+    return distance;
   }
 }
