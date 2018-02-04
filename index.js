@@ -8,3 +8,11 @@ function distanceFromHqInBlocks(blocks) {
 function distanceFromHqInFeet(blocks) {
   return distanceFromHqInBlocks(blocks) * 264;
 }
+function calculateVertical(beginning, destination) {
+  if (beginning > destination) {
+    return (beginning - destination) * 264;
+  } else {
+    return (destination - beginning) * 264;
+  }
+}
+function distanceTravelledInFeet()
